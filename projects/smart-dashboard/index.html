@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseBoard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1>PulseBoard</h1>
+        <p class="subtitle">Your smart daily dashboard</p>
+        <p id="greeting" class="greeting">Welcome back.</p>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </header>
+
+    <main class="dashboard">
+      <section class="card clock-card" draggable="true">
+        <h2>Clock</h2>
+        <div id="clock" class="clock"></div>
+        <div id="date" class="date"></div>
+      </section>
+
+      <section class="card todo-card" draggable="true">
+        <h2>To-Do List</h2>
+        <div class="todo-input-wrap">
+          <input type="text" id="todoInput" placeholder="Add a task..." />
+          <button id="addTodoBtn">+</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+      </section>
+
+      <section class="card notes-card" draggable="true">
+        <div class="notes-header">
+          <h2>Quick Notes</h2>
+          <span class="notes-badge">Autosaved</span>
+        </div>
+        <textarea id="notesArea" placeholder="Write your notes here..."></textarea>
+      </section>
+
+      <section class="card weather-card" draggable="true">
+        <h2>Weather</h2>
+        <div id="weatherContent" class="weather-content">
+          <p>Loading weather...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

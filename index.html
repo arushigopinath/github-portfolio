@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arushi Gopinath | Portfolio</title>
+    <meta name="description" content="Portfolio and profile site." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top" aria-label="Go to top">
+          <span class="logo-dot"></span>
+          <span>Arushi Gopinath</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" data-nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact" class="pill">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Software Engineering Student</p>
+
+            <h1 class="title">
+              I build practical software
+              <span class="title-accent">that feels good to use.</span>
+            </h1>
+
+            <p class="subtitle">
+              I'm a software engineering student who likes building reliable systems and clean interfaces.
+              I'm especially interested in embedded development, data/ML, and Qt apps.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">Explore projects</a>
+              <a class="btn ghost" href="https://github.com/arushigopinath" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="btn ghost" href="#contact">Let's talk</a>
+            </div>
+
+            <div class="mini">
+              <div class="mini-card">
+                <p class="mini-label">Currently learning</p>
+                <p class="mini-value">Project Management • ML • Software Design</p>
+              </div>
+              <div class="mini-card">
+                <p class="mini-label">Location</p>
+                <p class="mini-value">Toronto, Canada</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="blob"></div>
+            <div class="grid"></div>
+            <div class="card-stack">
+              <div class="ghost-card"></div>
+              <div class="ghost-card"></div>
+              <div class="ghost-card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p class="lead">
+              I’m a software engineering student who likes building things from scratch and figuring out how they actually work.
+              I’m especially interested in projects where I can combine logic, real-world problem solving, and clean UI.  
+            </p>
+            <p>
+              I enjoy turning rough ideas into something structured and usable.
+              I try to keep my code simple, my designs clear, and my projects practical and not just something that works once,
+              but something that holds up in real use.
+            </p>
+            <p class="muted">
+              Right now I'm looking for co-op / internship opportunities where I can contribute to real product work.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Quick snapshot</h3>
+            <ul class="bullets">
+              <li>Interested in Project Management + Software Design</li>
+              <li>Enjoys turning messy requirements into clear features</li>
+              <li>Building toward co-op / internship opportunities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Projects</h2>
+              <p class="muted">
+                A curated list of work-in-progress and shipped items. Some projects are documentation-first
+                (research, analysis, design), and others include code.
+              </p>
+            </div>
+
+            <div class="project-controls">
+              <input id="projectSearch" class="input" type="search" placeholder="Search projects…" />
+              <select id="projectFilter" class="select">
+                <option value="all">All</option>
+                <option value="docs">Docs / Research</option>
+                <option value="embedded">Embedded</option>
+                <option value="ui">UI / Qt</option>
+                <option value="web">Web</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="projectsGrid" class="projects-grid"></div>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skill-grid">
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <p>C/C++, Python, Java, JavaScript/TypeScript, SQL</p>
+            </div>
+            <div class="skill-card">
+              <h3>Embedded</h3>
+              <p>MCUs, GPIO, ADC/DAC, PWM, UART/I2C/SPI, FreeRTOS</p>
+            </div>
+            <div class="skill-card">
+              <h3>Data / ML</h3>
+              <p>pandas, NumPy, scikit-learn, EDA, evaluation (confusion matrix/ROC)</p>
+            </div>
+            <div class="skill-card">
+              <h3>Tools</h3>
+              <p>Git/GitHub, VS Code, MCUXpresso, Linux basics, debugging & testing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Education</h2>
+            <p class="muted">A quick overview of what I'm studying and building.</p>
+          </div>
+
+          <div class="cards-2">
+            <article class="card">
+              <h3>Seneca Polytechnic</h3>
+              <p class="muted">Bachelors in Software Engineering (BSA) • Toronto, Canada</p>
+              <ul class="bullets">
+                <li>Embedded Systems, Microprocessors</li>
+                <li>Principles of GUI</li>
+                <li>Machine Learning & Data Mining (CRISP-DM)</li>
+                <li>Software Design, Testing, and sustainability-focused engineering</li>
+                <li>Design Patterns</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Focus areas</h3>
+              <p class="muted">What I'm actively working on building skills in:</p>
+              <div class="chip-row">
+                <span class="chip">Embedded + RTOS</span>
+                <span class="chip">Sensor data pipelines</span>
+                <span class="chip">UI/UX in Qt</span>
+                <span class="chip">Practical ML</span>
+                <span class="chip">Testing & quality</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Experience</h2>
+          </div>
+
+          <div class="cards-2">
+            <article class="card">
+              <h3>Software Engineering Co-op — Lead With Your Heart</h3>
+              <p class="muted">
+                 May 2025 – Aug 2025 • Calgary, Canada • Emergency Preparedness Technology
+              </p>
+              <ul class="bullets">
+                <li>Contributed to the development of <strong>GetOut</strong>, an emergency evacuation and communication platform designed for Indigenous communities</li>
+                <li>Researched real-world evacuation challenges using case studies (e.g., floods, wildfires) to inform system design decisions</li>
+                <li>Designed and evaluated features such as evacuee tracking, shelter allocation, and real-time communication tools</li>
+                <li>Collaborated with stakeholders and incorporated feedback to improve usability, accessibility, and reliability of the system</li>
+                <li>Analyzed existing emergency management tools to identify gaps and propose more efficient, user-centered solutions</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>What I bring to teams</h3>
+              <ul class="bullets">
+                <li>Clear communication + structured thinking</li>
+                <li>Comfortable learning new tools quickly</li>
+                <li>Documentation-first habits (useful for real teams)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact-card">
+            <h2>Contact</h2>
+            <p class="lead">Want to connect? I'm open to internships, co-ops, and collaboration.</p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="mailto:arushigopinath@gmail.com">Email me</a>
+              <a class="btn ghost" href="https://github.com/arushigopinath" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Arushi Gopinath</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
